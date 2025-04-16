@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .language {
+      position: absolute;
+      top: 20px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .form-container {
+      width: 90%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input {
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #444;
+      background-color: #1a1a2e;
+      color: white;
+      font-size: 14px;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      padding: 12px;
+      border-radius: 20px;
+      background-color: #0095f6;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .forgot {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .create {
+      margin-top: auto;
+      position: absolute;
+      bottom: 30px;
+      width: 90%;
+      max-width: 350px;
+    }
+
+    .create button {
+      background-color: transparent;
+      border: 1px solid #0095f6;
+      color: #0095f6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="language">English (US)</div>
+
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+  </div>
+
+  <div class="form-container">
+    <input type="text" placeholder="Username, email or mobile number">
+    <input type="password" placeholder="Password">
+    <button>Log in</button>
+    <div class="forgot">Forgot password?</div>
+
+</body>
+</html>
